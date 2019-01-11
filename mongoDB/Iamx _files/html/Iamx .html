@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://104.131.177.38/demo/wp/iamx/ -->
+<html lang="en-US" class="wf-roboto-i9-active wf-roboto-n9-active wf-roboto-i5-active wf-roboto-i7-active wf-roboto-i1-active wf-roboto-i3-active wf-roboto-i4-active wf-roboto-n1-active wf-roboto-n3-active wf-roboto-n4-active wf-roboto-n5-active wf-roboto-n7-active wf-active js csstransforms csstransforms3d csstransitions js_active  vc_mobile  vc_transform  vc_transform skrollr skrollr-desktop" style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link type="text/css" rel="stylesheet" href="./Iamx _files/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="http://104.131.177.38/demo/wp/iamx/xmlrpc.php">
+    <title>Iamx – Creative Personal Resume WordPress Theme</title>
+                        <script src="./Iamx _files/webfont.js.tải xuống" type="text/javascript" async=""></script><script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Roboto:100,300,400,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        <link rel="alternate" type="application/rss+xml" title="Iamx » Feed" href="http://104.131.177.38/demo/wp/iamx/feed/">
+<link rel="alternate" type="application/rss+xml" title="Iamx » Comments Feed" href="http://104.131.177.38/demo/wp/iamx/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"wpemoji":"http:\/\/104.131.177.38\/demo\/wp\/iamx\/wp-includes\/js\/wp-emoji.js?ver=4.4.14","twemoji":"http:\/\/104.131.177.38\/demo\/wp\/iamx\/wp-includes\/js\/twemoji.js?ver=4.4.14"}};
+			( function( window, document, settings ) {
+	var src, ready;
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "simple" or "flag" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var canvas = document.createElement( 'canvas' ),
+			context = canvas.getContext && canvas.getContext( '2d' ),
+			stringFromCharCode = String.fromCharCode,
+			tonedata, tone, tone2;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		if ( 'flag' === type ) {
+			/*
+			 * This works because the image will be one of three things:
+			 * - Two empty squares, if the browser doesn't render emoji
+			 * - Two squares with 'A' and 'U' in them, if the browser doesn't render flag emoji
+			 * - The Australian flag
+			 *
+			 * The first two will encode to small images (1-2KB data URLs), the third will encode
+			 * to a larger image (4-5KB data URL).
+			 */
+			context.fillText( stringFromCharCode( 55356, 56806, 55356, 56826 ), 0, 0 );
+			return canvas.toDataURL().length > 3000;
+		} else if ( 'diversity' === type ) {
+			/*
+			 * This tests if the browser supports the Emoji Diversity specification, by rendering an
+			 * emoji with no skin tone specified (in this case, Santa). It then adds a skin tone, and
+			 * compares if the emoji rendering has changed.
+			 */
+			context.fillText( stringFromCharCode( 55356, 57221 ), 0, 0 );
+			tonedata = context.getImageData( 16, 16, 1, 1 ).data;
+
+			context.fillText( stringFromCharCode( 55356, 57221, 55356, 57343 ), 0, 0 );
+			// Chrome has issues comparing arrays, and Safari has issues converting arrays to strings.
+			// So, we create our own string and compare that, instead.
+			tonedata = context.getImageData( 16, 16, 1, 1 ).data;
+			tone2 = tonedata[0] + ',' + tonedata[1] + ',' + tonedata[2] + ',' + tonedata[3];
+
+			return tone !== tone2;
+		} else {
+			if ( 'simple' === type ) {
+				/*
+				 * This creates a smiling emoji, and checks to see if there is any image data in the
+				 * center pixel. In browsers that don't support emoji, the character will be rendered
+				 * as an empty square, so the center pixel will be blank.
+				 */
+				context.fillText( stringFromCharCode( 55357, 56835 ), 0, 0 );
+			} else {
+				/*
+				 * To check for Unicode 8 support, let's try rendering the most important advancement
+				 * that the Unicode Consortium have made in years: the burrito.
+				 */
+				context.fillText( stringFromCharCode( 55356, 57135 ), 0, 0 );
+			}
+			return context.getImageData( 16, 16, 1, 1 ).data[0] !== 0;
+		}
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	settings.supports = {
+		simple:    browserSupportsEmoji( 'simple' ),
+		flag:      browserSupportsEmoji( 'flag' ),
+		unicode8:  browserSupportsEmoji( 'unicode8' ),
+		diversity: browserSupportsEmoji( 'diversity' )
+	};
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.simple || ! settings.supports.flag || ! settings.supports.unicode8 || ! settings.supports.diversity ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script><script src="./Iamx _files/twemoji.js.tải xuống" type="text/javascript"></script><script src="./Iamx _files/wp-emoji.js.tải xuống" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./Iamx _files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="zilla-likes-css" href="./Iamx _files/zilla-likes.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-fontawesome-css" href="./Iamx _files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-shortcode-css" href="./Iamx _files/shortcode.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-flaticon-stroke-css" href="./Iamx _files/flaticon.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-bootstrap-css" href="./Iamx _files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-owl-carousel-css" href="./Iamx _files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-owl-theme-css" href="./Iamx _files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-animate-css" href="./Iamx _files/animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-magnific-css" href="./Iamx _files/magnific-popup.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-stylesheet-css" href="./Iamx _files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-responsive-css-css" href="./Iamx _files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="tt-custom-style-css" href="./Iamx _files/custom-style.php" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="./Iamx _files/js_composer.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="./Iamx _files/css(1)"><script type="text/javascript" src="./Iamx _files/jquery.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/jquery-migrate.js.tải xuống"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var zilla_likes = {"ajaxurl":"http:\/\/104.131.177.38\/demo\/wp\/iamx\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Iamx _files/zilla-likes.js.tải xuống"></script>
+<link rel="https://api.w.org/" href="http://104.131.177.38/demo/wp/iamx/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://104.131.177.38/demo/wp/iamx/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://104.131.177.38/demo/wp/iamx/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.4.14">
+<link rel="canonical" href="http://104.131.177.38/demo/wp/iamx/">
+<link rel="shortlink" href="http://104.131.177.38/demo/wp/iamx/">
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://104.131.177.38/demo/wp/iamx/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://104.131.177.38/demo/wp/iamx/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1467136222667{background-color: #ffffff !important;}.vc_custom_1467136235256{padding-top: 120px !important;background-color: #ffffff !important;}.vc_custom_1459810557797{padding-top: 50px !important;padding-bottom: 100px !important;background-color: #ffffff !important;}.vc_custom_1467136246705{padding-top: 120px !important;padding-bottom: 100px !important;background-color: #1a1e23 !important;}.vc_custom_1467136374326{padding-top: 120px !important;padding-bottom: 110px !important;background-color: #ffffff !important;}.vc_custom_1467136508118{padding-top: 130px !important;padding-bottom: 100px !important;}.vc_custom_1465280214674{padding-top: 110px !important;padding-bottom: 110px !important;}.vc_custom_1467136533390{padding-top: 125px !important;padding-bottom: 100px !important;}.vc_custom_1459716795561{margin-top: 100px !important;margin-bottom: 100px !important;}.vc_custom_1465200538374{margin-top: 50px !important;margin-bottom: 100px !important;}.vc_custom_1462078468210{background-image: url(http://localhost/iamx/wp-content/uploads/2016/01/Candidate-political.jpg?id=2928) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1459746613009{background-color: #ffffff !important;}.vc_custom_1465201911551{padding-bottom: 35px !important;}.vc_custom_1465202259125{padding-top: 10px !important;padding-bottom: 30px !important;}.vc_custom_1459875720144{padding-bottom: 50px !important;}.vc_custom_1462435414479{padding-top: 115px !important;padding-bottom: 115px !important;}.vc_custom_1460851505925{margin-bottom: 50px !important;}.vc_custom_1460352398196{margin-bottom: 30px !important;}.vc_custom_1460353252369{margin-bottom: 50px !important;}.vc_custom_1464627285804{margin-bottom: 40px !important;}</style><noscript>&lt;style type="text/css"&gt; .wpb_animate_when_almost_visible { opacity: 1; }&lt;/style&gt;</noscript><script type="text/javascript" charset="UTF-8" src="./Iamx _files/common.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./Iamx _files/map.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./Iamx _files/util.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./Iamx _files/marker.js.tải xuống"></script><style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="./Iamx _files/onion.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./Iamx _files/controls.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./Iamx _files/stats.js.tải xuống"></script></head>
+
+<body id="home" class="home page page-id-2320 page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php header-banner-one wpb-js-composer js-comp-ver-4.9.2 vc_responsive" data-spy="scroll" data-target=".navbar" data-offset="100">
+            <div id="preloader" style="background-color: rgb(255, 255, 255); display: none;">
+            <div id="status" style="display: none;">
+                <div class="status-mes" style="background-image: url(http://104.131.177.38/demo/wp/iamx/wp-content/themes/iamx/images/preloader.gif);"></div>
+            </div>
+        </div>
+    
+    <section class="header-banner banner-style-one tt-fullHeight" data-stellar-background-ratio="0.2" style="background-image: url(&quot;http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2015/11/home2.jpg&quot;); height: 746px; background-position: 0% 22.4px;">
+	<div class="intro">
+
+					<div class="intro-sub">I am X</div>
+		
+					<h1>Creative  <span> Designer</span></h1>
+				
+		<div class="intro-description">
+			I am a fully professional freelance creative User Interface Designer &amp; Developer
+Involving with latest web designing and technologies is a great
+feel free to contact creative.		</div> <!-- .intro-description -->
+		
+					<div class="social-icons">
+    <ul class="list-inline">
+                        <li><a href="http://104.131.177.38/demo/wp/iamx/#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="http://104.131.177.38/demo/wp/iamx/#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="http://104.131.177.38/demo/wp/iamx/#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="http://104.131.177.38/demo/wp/iamx/#"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+</div> <!-- /.social-icons -->			</div> <!-- .intro -->
+
+			<div class="mouse-icon">
+			<div class="wheel"></div>
+		</div>
+	</section>
+    <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 62px;"><div class="header-wrapper" style="">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".mobile-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="navbar-brand">
+                        <h1>
+                            <a href="http://104.131.177.38/demo/wp/iamx/" title="Iamx">
+                                
+                                    <img class="hidden-xs" src="./Iamx _files/logo.png" data-at2x="http://104.131.177.38/demo/wp/iamx/wp-content/themes/iamx/images/logo2x.png" alt="Iamx">
+                                    <img class="visible-xs" src="./Iamx _files/logo.png" data-at2x="http://104.131.177.38/demo/wp/iamx/wp-content/themes/iamx/images/logo2x.png" alt="Iamx">
+                                                            </a>
+                        </h1>
+                    </div> <!-- .navbar-brand -->
+                </div> <!-- .navbar-header -->
+
+                <div class="main-menu-wrapper hidden-xs clearfix">
+                    <div class="main-menu">                   
+                        <ul id="menu-primary-menu" class="menu nav navbar-nav navbar-right"><li id="menu-item-3549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3549  has-menu-child active"><a title="Home" href="http://104.131.177.38/demo/wp/iamx/#home">Home</a></li>
+<li id="menu-item-3550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3550  has-menu-child"><a title="About" href="http://104.131.177.38/demo/wp/iamx/#about">About</a></li>
+<li id="menu-item-3551" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3551  has-menu-child"><a title="Resume" href="http://104.131.177.38/demo/wp/iamx/#resume">Resume</a></li>
+<li id="menu-item-3552" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3552  has-menu-child"><a title="Skills" href="http://104.131.177.38/demo/wp/iamx/#skills">Skills</a></li>
+<li id="menu-item-3553" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3553  has-menu-child"><a title="Works" href="http://104.131.177.38/demo/wp/iamx/#works">Works</a></li>
+<li id="menu-item-3554" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3554  has-menu-child"><a title="Blog" href="http://104.131.177.38/demo/wp/iamx/#blog">Blog</a></li>
+<li id="menu-item-3555" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3555  has-menu-child"><a title="Contact" href="http://104.131.177.38/demo/wp/iamx/#contact">Contact</a></li>
+</ul>                    </div>
+                </div> <!-- /navbar-collapse -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="visible-xs">
+                    <div class="mobile-menu collapse navbar-collapse mobile-toggle">
+                        <ul id="menu-primary-menu-1" class="menu nav navbar-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3549  has-menu-child active"><a title="Home" href="http://104.131.177.38/demo/wp/iamx/#home">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3550  has-menu-child"><a title="About" href="http://104.131.177.38/demo/wp/iamx/#about">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3551  has-menu-child"><a title="Resume" href="http://104.131.177.38/demo/wp/iamx/#resume">Resume</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3552  has-menu-child"><a title="Skills" href="http://104.131.177.38/demo/wp/iamx/#skills">Skills</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3553  has-menu-child"><a title="Works" href="http://104.131.177.38/demo/wp/iamx/#works">Works</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3554  has-menu-child"><a title="Blog" href="http://104.131.177.38/demo/wp/iamx/#blog">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3555  has-menu-child"><a title="Contact" href="http://104.131.177.38/demo/wp/iamx/#contact">Contact</a></li>
+</ul>                    </div> <!-- /.navbar-collapse -->
+                </div>
+            </div><!-- .container-->
+        </nav>
+    </div></div> <!-- .header-wrapper -->
+
+
+
+	
+	
+		<section id="about" class="vc_row section-wrapper vc_custom_1467136222667 vc_row-has-fill"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+    <div class="section-intro  text-center  vc_custom_1459716795561">
+        <h2 style="color:#282828" class="section-title wow fadeInUp">About Me</h2>
+
+                
+        
+                    <span class="separator" style="background-color:#dd3333"><span style="background-color:#dd3333"></span></span>
+        
+    </div> <!-- .section-intro -->
+
+<div class="col-md-4 col-md-push-8   vc_custom_1465200538374">
+    <div class="biography">
+        <div class="myphoto">
+                        <img class="img-responsive" src="./Iamx _files/myphoto-1.jpg" alt="">
+            <div class="img-frame"></div>
+        </div>
+        <ul>
+            
+                            <li><strong>Name:&nbsp;</strong>John Doe </li>
+                            <li><strong>Date of birth:&nbsp;</strong>05 Dec 1993 </li>
+                            <li><strong>Address:&nbsp;</strong>239/2 Awesome Street, USA </li>
+                            <li><strong>Nationality:&nbsp;</strong>American </li>
+                            <li><strong>Phone:&nbsp;</strong>(000) 1234 56789 </li>
+                            <li><strong>Email:&nbsp;</strong>yourmail@iamx.com </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="col-md-8 col-md-pull-4">
+    <div class="short-info wow fadeInUp">
+<h3>Objective</h3>
+<p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I’m presently expanding my solid experience in UI / UX design. I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers. I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I’m self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+</div>
+<div class="short-info wow fadeInUp">
+<h3>What I Do ?</h3>
+<p>I have been working as a web interface designer since. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS3 and HTML5 for modern websites. I loving creating awesome as per my clients’ need. I think user experience when I try to craft something for my clients. Making a design awesome.</p>
+<ul class="list-check">
+<li>User Experience Design</li>
+<li>Interface Design</li>
+<li>Product Design</li>
+<li>Branding Design</li>
+<li>Digital Painting</li>
+<li>Video Editing</li>
+</ul>
+</div>
+    <div class="my-signature">
+                  <img src="./Iamx _files/sign.png" alt="">
+    </div>
+
+    <div class="download-button">
+      <a class="btn btn-info btn-lg" href="http://104.131.177.38/demo/wp/iamx/#"><i class="fa fa-paper-plane"></i>Send me message</a>
+      <a class="btn btn-primary btn-lg" href="http://104.131.177.38/demo/wp/iamx/#"><i class="fa fa-download"></i>Download my cv</a>
+    </div>
+</div>
+
+</div></div></div></div></div></section><section class="vc_row section-wrapper"><div class="container-fullwidth"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+    <!-- Video Section -->
+    <section id="video" class="video-section" style="background-image: url(http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2015/11/video-bg.jpg); min-height: 500px">
+        <div class="tf-bg-overlay">
+            <div class="video-intro">
+                                        <a class="popup-video" href="https://www.youtube.com/watch?v=_JENG0Z8AMk"> <i class="fa fa-play"></i>  </a>
+                                    <h2 style="color:#ffffff">Video Introducing</h2>
+            </div>
+        </div> <!--/.overlay-->
+    </section> <!-- /.Video Section -->
+</div></div></div></div></div></section><section id="resume" class="vc_row section-wrapper vc_custom_1467136235256 vc_row-has-fill"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+    <div class="section-intro  text-center  vc_custom_1459746613009">
+        <h2 style="" class="section-title wow fadeInUp">RESUME</h2>
+
+                
+        
+        
+    </div> <!-- .section-intro -->
+
+</div></div></div></div></div></section><section class="vc_row section-wrapper vc_custom_1459810557797 vc_row-has-fill"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+
+        <div class="col-md-12  ">
+            <div class="resume-title">
+                <h3 style="&lt;br /&gt;
+&lt;b&gt;Notice&lt;/b&gt;:  Undefined variable: education_title_color in &lt;b&gt;/var/www/html/demo/wp/iamx/wp-content/themes/iamx/visual-composer/shortcodes/tt_resume_section.php&lt;/b&gt; on line &lt;b&gt;19&lt;/b&gt;&lt;br /&gt;
+">Education</h3>
+            </div>
+            <div class="resume">
+                <ul class="timeline">
+
+                    
+                                            <li class="" style="color: ">
+                            <div class="posted-date">
+                                <span class="month">2007-2011</span>
+                            </div><!-- /posted-date -->
+
+                            <div class="timeline-panel wow fadeInUp">
+                                <div class="timeline-content">
+                                    <div class="timeline-heading">
+                                        <h3>BACHELOR DEGREE CERTIFICATE</h3>
+                                        <span>BA(Hons) in UI Engineering, Arts University, Pabna, USA</span>
+                                    </div><!-- /timeline-heading -->
+
+                                    <div class="timeline-body">
+                                        <p>I have completed UI Engineering degree from ABC University, Boston, USA at feel the charm of existence in this spot, which was creat.</p>
+                                    </div><!-- /timeline-body -->
+                                </div> <!-- /timeline-content -->
+                            </div><!-- /timeline-panel -->
+                        </li>                        
+                                            <li class="timeline-inverted" style="color: ">
+                            <div class="posted-date">
+                                <span class="month">2004-2006</span>
+                            </div><!-- /posted-date -->
+
+                            <div class="timeline-panel wow fadeInUp">
+                                <div class="timeline-content">
+                                    <div class="timeline-heading">
+                                        <h3>HIGHER SECONDARY CERTIFICATE</h3>
+                                        <span>Typography Arts, FA College, New York, USA</span>
+                                    </div><!-- /timeline-heading -->
+
+                                    <div class="timeline-body">
+                                        <p>From this college of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                    </div><!-- /timeline-body -->
+                                </div> <!-- /timeline-content -->
+                            </div><!-- /timeline-panel -->
+                        </li>                        
+                                            <li class="" style="color: ">
+                            <div class="posted-date">
+                                <span class="month">2000-2003</span>
+                            </div><!-- /posted-date -->
+
+                            <div class="timeline-panel wow fadeInUp">
+                                <div class="timeline-content">
+                                    <div class="timeline-heading">
+                                        <h3>SECONDARY SCHOOL CERTIFICATE</h3>
+                                        <span>Creative Arts, Julius Jr. school, USA</span>
+                                    </div><!-- /timeline-heading -->
+
+                                    <div class="timeline-body">
+                                        <p>I was awesome at arts, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
+                                    </div><!-- /timeline-body -->
+                                </div> <!-- /timeline-content -->
+                            </div><!-- /timeline-panel -->
+                        </li>                        
+                                            <li class="timeline-inverted" style="color: ">
+                            <div class="posted-date">
+                                <span class="month">2011-2013</span>
+                            </div><!-- /posted-date -->
+
+                            <div class="timeline-panel wow fadeInUp">
+                                <div class="timeline-content">
+                                    <div class="timeline-heading">
+                                        <h3>JUNIOR UI DESIGNER</h3>
+                                        <span>XYZ Design Home, One Street, Boston</span>
+                                    </div><!-- /timeline-heading -->
+
+                                    <div class="timeline-body">
+                                        <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                                    </div><!-- /timeline-body -->
+                                </div> <!-- /timeline-content -->
+                            </div><!-- /timeline-panel -->
+                        </li>                        
+                                            <li class="" style="color: ">
+                            <div class="posted-date">
+                                <span class="month">2013-2015</span>
+                            </div><!-- /posted-date -->
+
+                            <div class="timeline-panel wow fadeInUp">
+                                <div class="timeline-content">
+                                    <div class="timeline-heading">
+                                        <h3>LEAD UX CONSULTANT</h3>
+                                        <span>Lucky8 Designing Firm, California</span>
+                                    </div><!-- /timeline-heading -->
+
+                                    <div class="timeline-body">
+                                        <p>Completely provide access to seamless manufactured products before functionalized synergy. Progressively redefine competitive.</p>
+                                    </div><!-- /timeline-body -->
+                                </div> <!-- /timeline-content -->
+                            </div><!-- /timeline-panel -->
+                        </li>                        
+                    
+                </ul>
+            </div>
+        </div>       
+               
+
+
+</div></div></div></div></div></section><section id="skills" class="vc_row section-wrapper vc_custom_1467136246705 vc_row-has-fill"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+    <div class="section-intro  text-center  vc_custom_1465201911551">
+        <h2 style="color:#ffffff" class="section-title wow fadeInUp">Skills</h2>
+
+                
+        
+        
+    </div> <!-- .section-intro -->
+
+<div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-content-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_progress_bar wpb_content_element  vc_progress-bar-color-bar_grey"><div class="vc_general vc_single_bar"><small class="vc_label">UX Design <span class="vc_label_units">95%</span></small><span class="vc_bar " data-percentage-value="95" data-value="95" style="background-color: rgb(104, 195, 163); width: 95%;"></span></div><div class="vc_general vc_single_bar"><small class="vc_label">Visual Design <span class="vc_label_units">80%</span></small><span class="vc_bar " data-percentage-value="80" data-value="80" style="background-color: rgb(104, 195, 163); width: 80%;"></span></div><div class="vc_general vc_single_bar"><small class="vc_label">Business Design <span class="vc_label_units">75%</span></small><span class="vc_bar " data-percentage-value="75" data-value="75" style="background-color: rgb(104, 195, 163); width: 75%;"></span></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_progress_bar wpb_content_element"><div class="vc_general vc_single_bar"><small class="vc_label">Branding Design <span class="vc_label_units">95%</span></small><span class="vc_bar " data-percentage-value="95" data-value="95" style="background-color: rgb(104, 195, 163); width: 95%;"></span></div><div class="vc_general vc_single_bar"><small class="vc_label">Motion Graphic <span class="vc_label_units">80%</span></small><span class="vc_bar " data-percentage-value="80" data-value="80" style="background-color: rgb(104, 195, 163); width: 80%;"></span></div><div class="vc_general vc_single_bar"><small class="vc_label">Flyers Designing <span class="vc_label_units">75%</span></small><span class="vc_bar " data-percentage-value="75" data-value="75" style="background-color: rgb(104, 195, 163); width: 75%;"></span></div></div></div></div></div></div><h4 style="font-size: 24px;color: #ffffff;line-height: 24px;text-align: center;font-family:Roboto;font-weight:700;font-style:normal" class="vc_custom_heading vc_custom_1465202259125">MORE SKILLS</h4><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_pie_chart wpb_content_element vc_ready" data-pie-value="91" data-pie-label-value="91" data-pie-units="%" data-pie-color="#68c3a2"><div class="wpb_wrapper"><div class="vc_pie_wrapper" style="width: 132px;"><span class="vc_pie_chart_back" style="border-color: rgb(104, 195, 162); width: 132px; height: 132px;"></span><span class="vc_pie_chart_value" style="width: 132px; height: 132px; line-height: 132px;">91%</span><canvas width="132px" height="132px"></canvas></div><h4 class="wpb_heading wpb_pie_chart_heading">Leadership</h4></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_pie_chart wpb_content_element vc_ready" data-pie-value="23" data-pie-label-value="23" data-pie-units="%" data-pie-color="#68c3a2"><div class="wpb_wrapper"><div class="vc_pie_wrapper" style="width: 132px;"><span class="vc_pie_chart_back" style="border-color: rgb(104, 195, 162); width: 132px; height: 132px;"></span><span class="vc_pie_chart_value" style="width: 132px; height: 132px; line-height: 132px;">23%</span><canvas width="132px" height="132px"></canvas></div><h4 class="wpb_heading wpb_pie_chart_heading">Creativity</h4></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_pie_chart wpb_content_element vc_ready" data-pie-value="68" data-pie-label-value="68" data-pie-units="%" data-pie-color="#68c3a2"><div class="wpb_wrapper"><div class="vc_pie_wrapper" style="width: 132px;"><span class="vc_pie_chart_back" style="border-color: rgb(104, 195, 162); width: 132px; height: 132px;"></span><span class="vc_pie_chart_value" style="width: 132px; height: 132px; line-height: 132px;">68%</span><canvas width="132px" height="132px"></canvas></div><h4 class="wpb_heading wpb_pie_chart_heading">Management</h4></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_pie_chart wpb_content_element vc_ready" data-pie-value="68" data-pie-label-value="68" data-pie-units="%" data-pie-color="#68c3a2"><div class="wpb_wrapper"><div class="vc_pie_wrapper" style="width: 132px;"><span class="vc_pie_chart_back" style="border-color: rgb(104, 195, 162); width: 132px; height: 132px;"></span><span class="vc_pie_chart_value" style="width: 132px; height: 132px; line-height: 132px;">68%</span><canvas width="132px" height="132px"></canvas></div><h4 class="wpb_heading wpb_pie_chart_heading">Branding</h4></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_pie_chart wpb_content_element vc_ready" data-pie-value="68" data-pie-label-value="68" data-pie-units="%" data-pie-color="#68c3a2"><div class="wpb_wrapper"><div class="vc_pie_wrapper" style="width: 132px;"><span class="vc_pie_chart_back" style="border-color: rgb(104, 195, 162); width: 132px; height: 132px;"></span><span class="vc_pie_chart_value" style="width: 132px; height: 132px; line-height: 132px;">68%</span><canvas width="132px" height="132px"></canvas></div><h4 class="wpb_heading wpb_pie_chart_heading">Marketing</h4></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_pie_chart wpb_content_element vc_ready" data-pie-value="68" data-pie-label-value="68" data-pie-units="%" data-pie-color="#68c3a2"><div class="wpb_wrapper"><div class="vc_pie_wrapper" style="width: 132px;"><span class="vc_pie_chart_back" style="border-color: rgb(104, 195, 162); width: 132px; height: 132px;"></span><span class="vc_pie_chart_value" style="width: 132px; height: 132px; line-height: 132px;">68%</span><canvas width="132px" height="132px"></canvas></div><h4 class="wpb_heading wpb_pie_chart_heading">Motivation</h4></div></div></div></div></div></div></div></div></div></div></div></section><section id="works" class="vc_row section-wrapper vc_custom_1467136374326 vc_row-has-fill"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+    <div class="section-intro  text-center  vc_custom_1459875720144">
+        <h2 style="" class="section-title wow fadeInUp">Works</h2>
+
+                
+        
+        
+    </div> <!-- .section-intro -->
+
+		
+	<div class="reformation-wrap ">
+		
+
+				<ul class="list-inline" id="filter">
+					<li><a class="active" data-group="all">All</a></li>
+											<li>
+							<a data-group="design">Design</a>
+						</li>
+											<li>
+							<a data-group="identity">Identity</a>
+						</li>
+											<li>
+							<a data-group="interface">Interface</a>
+						</li>
+											<li>
+							<a data-group="web">Web</a>
+						</li>
+									</ul>
+
+
+		
+		<div class="row">
+			<div class="tt-grid shuffle" style="position: relative; height: 474px; transition: height 250ms ease-out;">
+				
+				
+					<!-- the loop -->
+					
+			            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3  shuffle-item filtered" data-groups="[&quot;interface&quot;]" style="position: absolute; top: 0px; left: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); opacity: 1; transition: transform 250ms ease-out, opacity 250ms ease-out;">
+			              <div class="portfolio-bg">
+			                <div class="portfolio">
+			                  <div class="tt-overlay"></div>
+			                  <div class="links">
+			                    <a class="image-link" href="./Iamx _files/portfolio-3.jpg"><i class="fa fa-search-plus"></i></a>
+			                    <a href="http://104.131.177.38/demo/wp/iamx/blog/work/portfolio-title-9/"><i class="fa fa-link"></i></a>                          
+			                  </div><!-- /.links -->
+								<img width="800" height="600" src="./Iamx _files/portfolio-3.jpg" class="img-responsive wp-post-image" alt="Portfolio Title" srcset="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-3-300x225.jpg 300w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-3-768x576.jpg 768w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-3-127x95.jpg 127w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-3-200x150.jpg 200w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-3.jpg 800w" sizes="(max-width: 800px) 100vw, 800px">			                  
+			                  <div class="portfolio-info">
+			                    <h3>Portfolio Title</h3>
+			                  </div><!-- /.portfolio-info -->
+			                </div><!-- /.portfolio -->
+			              </div><!-- /.portfolio-bg -->
+			            </div><!-- /.portfolio-item -->
+
+
+					
+			            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3  shuffle-item filtered" data-groups="[&quot;identity&quot;,&quot;web&quot;]" style="position: absolute; top: 0px; left: 0px; transform: translate3d(293px, 0px, 0px) scale3d(1, 1, 1); opacity: 1; transition: transform 250ms ease-out, opacity 250ms ease-out;">
+			              <div class="portfolio-bg">
+			                <div class="portfolio">
+			                  <div class="tt-overlay"></div>
+			                  <div class="links">
+			                    <a class="image-link" href="./Iamx _files/portfolio-2.jpg"><i class="fa fa-search-plus"></i></a>
+			                    <a href="http://104.131.177.38/demo/wp/iamx/blog/work/portfolio-title-8/"><i class="fa fa-link"></i></a>                          
+			                  </div><!-- /.links -->
+								<img width="800" height="600" src="./Iamx _files/portfolio-2.jpg" class="img-responsive wp-post-image" alt="Portfolio Title" srcset="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-2-300x225.jpg 300w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-2-768x576.jpg 768w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-2-127x95.jpg 127w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-2-200x150.jpg 200w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-2.jpg 800w" sizes="(max-width: 800px) 100vw, 800px">			                  
+			                  <div class="portfolio-info">
+			                    <h3>Portfolio Title</h3>
+			                  </div><!-- /.portfolio-info -->
+			                </div><!-- /.portfolio -->
+			              </div><!-- /.portfolio-bg -->
+			            </div><!-- /.portfolio-item -->
+
+
+					
+			            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3  shuffle-item filtered" data-groups="[&quot;web&quot;]" style="position: absolute; top: 0px; left: 0px; transform: translate3d(586px, 0px, 0px) scale3d(1, 1, 1); opacity: 1; transition: transform 250ms ease-out, opacity 250ms ease-out;">
+			              <div class="portfolio-bg">
+			                <div class="portfolio">
+			                  <div class="tt-overlay"></div>
+			                  <div class="links">
+			                    <a class="image-link" href="./Iamx _files/portfolio-7.jpg"><i class="fa fa-search-plus"></i></a>
+			                    <a href="http://104.131.177.38/demo/wp/iamx/blog/work/portfolio-title-7/"><i class="fa fa-link"></i></a>                          
+			                  </div><!-- /.links -->
+								<img width="800" height="600" src="./Iamx _files/portfolio-7.jpg" class="img-responsive wp-post-image" alt="Portfolio Title" srcset="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-7-300x225.jpg 300w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-7-768x576.jpg 768w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-7-127x95.jpg 127w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-7-200x150.jpg 200w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-7.jpg 800w" sizes="(max-width: 800px) 100vw, 800px">			                  
+			                  <div class="portfolio-info">
+			                    <h3>Portfolio Title</h3>
+			                  </div><!-- /.portfolio-info -->
+			                </div><!-- /.portfolio -->
+			              </div><!-- /.portfolio-bg -->
+			            </div><!-- /.portfolio-item -->
+
+
+					
+			            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3  shuffle-item filtered" data-groups="[&quot;design&quot;,&quot;identity&quot;]" style="position: absolute; top: 0px; left: 0px; transform: translate3d(879px, 0px, 0px) scale3d(1, 1, 1); opacity: 1; transition: transform 250ms ease-out, opacity 250ms ease-out;">
+			              <div class="portfolio-bg">
+			                <div class="portfolio">
+			                  <div class="tt-overlay"></div>
+			                  <div class="links">
+			                    <a class="image-link" href="./Iamx _files/portfolio-4.jpg"><i class="fa fa-search-plus"></i></a>
+			                    <a href="http://104.131.177.38/demo/wp/iamx/blog/work/portfolio-title-6/"><i class="fa fa-link"></i></a>                          
+			                  </div><!-- /.links -->
+								<img width="800" height="600" src="./Iamx _files/portfolio-4.jpg" class="img-responsive wp-post-image" alt="Portfolio Title" srcset="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-4-300x225.jpg 300w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-4-768x576.jpg 768w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-4-127x95.jpg 127w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-4-200x150.jpg 200w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-4.jpg 800w" sizes="(max-width: 800px) 100vw, 800px">			                  
+			                  <div class="portfolio-info">
+			                    <h3>Portfolio Title</h3>
+			                  </div><!-- /.portfolio-info -->
+			                </div><!-- /.portfolio -->
+			              </div><!-- /.portfolio-bg -->
+			            </div><!-- /.portfolio-item -->
+
+
+					
+			            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3  shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; transform: translate3d(0px, 237px, 0px) scale3d(1, 1, 1); opacity: 1; transition: transform 250ms ease-out, opacity 250ms ease-out;">
+			              <div class="portfolio-bg">
+			                <div class="portfolio">
+			                  <div class="tt-overlay"></div>
+			                  <div class="links">
+			                    <a class="image-link" href="./Iamx _files/portfolio-5.jpg"><i class="fa fa-search-plus"></i></a>
+			                    <a href="http://104.131.177.38/demo/wp/iamx/blog/work/portfolio-title-5/"><i class="fa fa-link"></i></a>                          
+			                  </div><!-- /.links -->
+								<img width="800" height="600" src="./Iamx _files/portfolio-5.jpg" class="img-responsive wp-post-image" alt="Portfolio Title" srcset="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-5-300x225.jpg 300w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-5-768x576.jpg 768w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-5-127x95.jpg 127w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-5-200x150.jpg 200w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-5.jpg 800w" sizes="(max-width: 800px) 100vw, 800px">			                  
+			                  <div class="portfolio-info">
+			                    <h3>Portfolio Title</h3>
+			                  </div><!-- /.portfolio-info -->
+			                </div><!-- /.portfolio -->
+			              </div><!-- /.portfolio-bg -->
+			            </div><!-- /.portfolio-item -->
+
+
+					
+			            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3  shuffle-item filtered" data-groups="[&quot;design&quot;,&quot;identity&quot;]" style="position: absolute; top: 0px; left: 0px; transform: translate3d(293px, 237px, 0px) scale3d(1, 1, 1); opacity: 1; transition: transform 250ms ease-out, opacity 250ms ease-out;">
+			              <div class="portfolio-bg">
+			                <div class="portfolio">
+			                  <div class="tt-overlay"></div>
+			                  <div class="links">
+			                    <a class="image-link" href="./Iamx _files/portfolio-6.jpg"><i class="fa fa-search-plus"></i></a>
+			                    <a href="http://104.131.177.38/demo/wp/iamx/blog/work/portfolio-title-4/"><i class="fa fa-link"></i></a>                          
+			                  </div><!-- /.links -->
+								<img width="800" height="600" src="./Iamx _files/portfolio-6.jpg" class="img-responsive wp-post-image" alt="Portfolio Title" srcset="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-6-300x225.jpg 300w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-6-768x576.jpg 768w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-6-127x95.jpg 127w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-6-200x150.jpg 200w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-6.jpg 800w" sizes="(max-width: 800px) 100vw, 800px">			                  
+			                  <div class="portfolio-info">
+			                    <h3>Portfolio Title</h3>
+			                  </div><!-- /.portfolio-info -->
+			                </div><!-- /.portfolio -->
+			              </div><!-- /.portfolio-bg -->
+			            </div><!-- /.portfolio-item -->
+
+
+					
+			            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3  shuffle-item filtered" data-groups="[&quot;design&quot;]" style="position: absolute; top: 0px; left: 0px; transform: translate3d(586px, 237px, 0px) scale3d(1, 1, 1); opacity: 1; transition: transform 250ms ease-out, opacity 250ms ease-out;">
+			              <div class="portfolio-bg">
+			                <div class="portfolio">
+			                  <div class="tt-overlay"></div>
+			                  <div class="links">
+			                    <a class="image-link" href="./Iamx _files/portfolio-8.jpg"><i class="fa fa-search-plus"></i></a>
+			                    <a href="http://104.131.177.38/demo/wp/iamx/blog/work/portfolio-title-3/"><i class="fa fa-link"></i></a>                          
+			                  </div><!-- /.links -->
+								<img width="800" height="600" src="./Iamx _files/portfolio-8.jpg" class="img-responsive wp-post-image" alt="Portfolio Title" srcset="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-8-300x225.jpg 300w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-8-768x576.jpg 768w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-8-127x95.jpg 127w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-8-200x150.jpg 200w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-8.jpg 800w" sizes="(max-width: 800px) 100vw, 800px">			                  
+			                  <div class="portfolio-info">
+			                    <h3>Portfolio Title</h3>
+			                  </div><!-- /.portfolio-info -->
+			                </div><!-- /.portfolio -->
+			              </div><!-- /.portfolio-bg -->
+			            </div><!-- /.portfolio-item -->
+
+
+					
+			            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3  shuffle-item filtered" data-groups="[&quot;identity&quot;,&quot;interface&quot;]" style="position: absolute; top: 0px; left: 0px; transform: translate3d(879px, 237px, 0px) scale3d(1, 1, 1); opacity: 1; transition: transform 250ms ease-out, opacity 250ms ease-out;">
+			              <div class="portfolio-bg">
+			                <div class="portfolio">
+			                  <div class="tt-overlay"></div>
+			                  <div class="links">
+			                    <a class="image-link" href="./Iamx _files/portfolio-1.jpg"><i class="fa fa-search-plus"></i></a>
+			                    <a href="http://104.131.177.38/demo/wp/iamx/blog/work/portfolio-title/"><i class="fa fa-link"></i></a>                          
+			                  </div><!-- /.links -->
+								<img width="800" height="600" src="./Iamx _files/portfolio-1.jpg" class="img-responsive wp-post-image" alt="Portfolio Title" srcset="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-1-300x225.jpg 300w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-1-768x576.jpg 768w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-1-127x95.jpg 127w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-1-200x150.jpg 200w, http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2016/04/portfolio-1.jpg 800w" sizes="(max-width: 800px) 100vw, 800px">			                  
+			                  <div class="portfolio-info">
+			                    <h3>Portfolio Title</h3>
+			                  </div><!-- /.portfolio-info -->
+			                </div><!-- /.portfolio -->
+			              </div><!-- /.portfolio-bg -->
+			            </div><!-- /.portfolio-item -->
+
+
+										<!-- end of the loop -->
+
+					
+								
+			</div> <!-- .tt-grid -->
+		</div> <!-- .row -->
+
+	</div> <!-- .reformation-wrap -->
+
+</div></div></div></div></div></section><section data-vc-parallax="1.5" data-vc-parallax-image="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2015/11/counter-bg.jpg" class="vc_row section-wrapper vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving"><div class="tt-overlay" style="background-color: rgba(26,30,35,0.85)"></div><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1462435414479"><div class="wpb_wrapper">
+	<div class="fact-wrap ">
+		
+			
+	<div class="count-wrap text-center col-sm-3  ">
+		
+		            <div class="tt-icon fontawesome-icon">
+                <i class="fa fa-flask custom-color " style="color:#ffffff"></i>
+            </div>
+        
+		<h3 style="color:#ffffff" class="timer">7</h3>
+		
+					<p style="color:#ffffff">Years of Experience</p>
+		
+	</div>
+
+		
+	<div class="count-wrap text-center col-sm-3  ">
+		
+		            <div class="tt-icon fontawesome-icon">
+                <i class="fa fa-thumbs-up custom-color " style="color:#ffffff"></i>
+            </div>
+        
+		<h3 style="color:#ffffff" class="timer">1651</h3>
+		
+					<p style="color:#ffffff">Projects Done</p>
+		
+	</div>
+
+		
+	<div class="count-wrap text-center col-sm-3  ">
+		
+		            <div class="tt-icon fontawesome-icon">
+                <i class="fa fa-bolt custom-color " style="color:#ffffff"></i>
+            </div>
+        
+		<h3 style="color:#ffffff" class="timer">251</h3>
+		
+					<p style="color:#ffffff">Happy Clients</p>
+		
+	</div>
+
+		
+	<div class="count-wrap text-center col-sm-3  ">
+		
+		            <div class="tt-icon fontawesome-icon">
+                <i class="fa fa-trophy custom-color " style="color:#ffffff"></i>
+            </div>
+        
+		<h3 style="color:#ffffff" class="timer">5</h3>
+		
+					<p style="color:#ffffff">Awards Won</p>
+		
+	</div>
+
+			
+	</div>
+	</div></div></div></div></div><div class="vc_parallax-inner skrollable skrollable-before" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; background-image: url(&quot;http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2015/11/counter-bg.jpg&quot;); top: -50%;"></div></section><section id="blog" class="vc_row section-wrapper vc_custom_1467136508118"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+    <div class="section-intro  text-center  vc_custom_1460851505925">
+        <h2 style="" class="section-title wow fadeInUp">Latest Post</h2>
+
+                
+        
+        
+    </div> <!-- .section-intro -->
+
+
+		<div class="latest-post-wrapper 4">
+							<h2></h2>
+						
+			
+							
+								
+				<div class="col-sm-4">
+		            <article class="blog-post-wrapper">
+		              <div class="figure">    
+		                
+															<div class="post-thumbnail">
+									<a href="http://104.131.177.38/demo/wp/iamx/blog/2016/04/17/how-to-create-a-print-ready-brochure-using-photoshop/">
+										<img width="340" height="225" src="./Iamx _files/03-340x225.jpg" class="img-responsive wp-post-image" alt="How to create a print ready brochure using photoshop">									</a>
+								</div>
+							
+		              	</div><!-- /.figure -->
+		              	<header class="entry-header">
+			                <div class="post-meta">
+			                  	<span class="posted-in">
+				                    <a href="http://104.131.177.38/demo/wp/iamx/blog/category/uncategorized/" rel="category tag">Uncategorized</a>				                </span>
+			                </div>
+			                <h2 class="entry-title"><a href="http://104.131.177.38/demo/wp/iamx/blog/2016/04/17/how-to-create-a-print-ready-brochure-using-photoshop/" rel="">How to create a print ready brochure using photoshop</a></h2>
+			                <hr>
+			                <div class="entry-meta">
+			                  	
+        <ul class="list-inline">
+            <li>
+                <span class="author vcard">
+                    <i class="fa fa-user"></i><a class="url fn n" href="http://104.131.177.38/demo/wp/iamx/blog/author/admin/">admin</a>                </span>
+            </li>
+
+            <li>
+                <i class="fa fa-calendar"></i>April 17, 2016            </li>
+
+            <li>
+                <span class="post-comments-number">
+                    <i class="fa fa-comments"></i><a href="http://104.131.177.38/demo/wp/iamx/blog/2016/04/17/how-to-create-a-print-ready-brochure-using-photoshop/#respond">0</a>                </span>
+            </li>
+            
+                    </ul>
+    			                </div><!-- .entry-meta -->
+		              	</header><!-- .entry-header -->
+		            </article>					
+				</div>
+								
+				<div class="col-sm-4">
+		            <article class="blog-post-wrapper">
+		              <div class="figure">    
+		                
+															<div class="post-thumbnail">
+									<a href="http://104.131.177.38/demo/wp/iamx/blog/2016/04/17/what-is-the-style-of-font-called-that-is-typically/">
+										<img width="340" height="225" src="./Iamx _files/02-340x225.jpg" class="img-responsive wp-post-image" alt="What is the style of font called that is typically">									</a>
+								</div>
+							
+		              	</div><!-- /.figure -->
+		              	<header class="entry-header">
+			                <div class="post-meta">
+			                  	<span class="posted-in">
+				                    <a href="http://104.131.177.38/demo/wp/iamx/blog/category/uncategorized/" rel="category tag">Uncategorized</a>				                </span>
+			                </div>
+			                <h2 class="entry-title"><a href="http://104.131.177.38/demo/wp/iamx/blog/2016/04/17/what-is-the-style-of-font-called-that-is-typically/" rel="">What is the style of font called that is typically</a></h2>
+			                <hr>
+			                <div class="entry-meta">
+			                  	
+        <ul class="list-inline">
+            <li>
+                <span class="author vcard">
+                    <i class="fa fa-user"></i><a class="url fn n" href="http://104.131.177.38/demo/wp/iamx/blog/author/admin/">admin</a>                </span>
+            </li>
+
+            <li>
+                <i class="fa fa-calendar"></i>April 17, 2016            </li>
+
+            <li>
+                <span class="post-comments-number">
+                    <i class="fa fa-comments"></i><a href="http://104.131.177.38/demo/wp/iamx/blog/2016/04/17/what-is-the-style-of-font-called-that-is-typically/#respond">0</a>                </span>
+            </li>
+            
+                    </ul>
+    			                </div><!-- .entry-meta -->
+		              	</header><!-- .entry-header -->
+		            </article>					
+				</div>
+								
+				<div class="col-sm-4">
+		            <article class="blog-post-wrapper">
+		              <div class="figure">    
+		                
+															<div class="post-thumbnail">
+									<a href="http://104.131.177.38/demo/wp/iamx/blog/2016/04/17/common-fonts-used-for-newspaper-template-design/">
+										<img width="340" height="225" src="./Iamx _files/01-340x225.jpg" class="img-responsive wp-post-image" alt="Common fonts used for newspaper template design">									</a>
+								</div>
+							
+		              	</div><!-- /.figure -->
+		              	<header class="entry-header">
+			                <div class="post-meta">
+			                  	<span class="posted-in">
+				                    <a href="http://104.131.177.38/demo/wp/iamx/blog/category/uncategorized/" rel="category tag">Uncategorized</a>				                </span>
+			                </div>
+			                <h2 class="entry-title"><a href="http://104.131.177.38/demo/wp/iamx/blog/2016/04/17/common-fonts-used-for-newspaper-template-design/" rel="">Common fonts used for newspaper template design</a></h2>
+			                <hr>
+			                <div class="entry-meta">
+			                  	
+        <ul class="list-inline">
+            <li>
+                <span class="author vcard">
+                    <i class="fa fa-user"></i><a class="url fn n" href="http://104.131.177.38/demo/wp/iamx/blog/author/admin/">admin</a>                </span>
+            </li>
+
+            <li>
+                <i class="fa fa-calendar"></i>April 17, 2016            </li>
+
+            <li>
+                <span class="post-comments-number">
+                    <i class="fa fa-comments"></i><a href="http://104.131.177.38/demo/wp/iamx/blog/2016/04/17/common-fonts-used-for-newspaper-template-design/#respond">0</a>                </span>
+            </li>
+            
+                    </ul>
+    			                </div><!-- .entry-meta -->
+		              	</header><!-- .entry-header -->
+		            </article>					
+				</div>
+				
+				
+			
+			
+		</div> <!-- .post-category-wrapper -->
+
+	</div></div></div></div></div></section><section data-vc-parallax="1.5" data-vc-parallax-image="http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2015/11/hire-bg-1.jpg" class="vc_row section-wrapper vc_custom_1465280214674 vc_row-has-fill vc_row-o-content-middle vc_row-flex vc_general vc_parallax vc_parallax-content-moving"><div class="tt-overlay" style="background-color: rgba(104,195,163,0.7)"></div><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><h2 style="font-size: 36px;color: #ffffff;text-align: center" class="vc_custom_heading vc_custom_1460352398196">I'm available for freelance project</h2><div class="vc_btn3-container vc_btn3-center"><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline vc_btn3-color-white" href="http://104.131.177.38/demo/wp/iamx/#" title="" target="_self">GET HIRED</a></div>
+</div></div></div></div></div><div class="vc_parallax-inner skrollable skrollable-before" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; background-image: url(&quot;http://104.131.177.38/demo/wp/iamx/wp-content/uploads/2015/11/hire-bg-1.jpg&quot;); top: -50%;"></div></section><section id="contact" class="vc_row section-wrapper vc_custom_1467136533390"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+    <div class="section-intro  text-center  vc_custom_1460353252369">
+        <h2 style="" class="section-title wow fadeInUp">Get in touch</h2>
+
+                
+        
+        
+    </div> <!-- .section-intro -->
+
+<div class="vc_row wpb_row vc_inner vc_row-fluid contact-section"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"><h3 style="font-size: 14px;line-height: 28px;text-align: left" class="vc_custom_heading vc_custom_1464627285804">SEND ME A MESSAGE</h3><div role="form" class="wpcf7" id="wpcf7-f3297-p2320-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="http://104.131.177.38/demo/wp/iamx/#wpcf7-f3297-p2320-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="3297">
+<input type="hidden" name="_wpcf7_version" value="4.4.2">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f3297-p2320-o1">
+<input type="hidden" name="_wpnonce" value="5ac61820ae">
+</div>
+<div class="form-group">
+      <label>Name</label><br>
+      <span class="wpcf7-form-control-wrap text-129"><input type="text" name="text-129" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="required" aria-required="true" aria-invalid="false"></span>
+    </div>
+<div class="form-group">
+      <label>Email</label><br>
+      <span class="wpcf7-form-control-wrap email-459"><input type="email" name="email-459" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email form-control" id="email" aria-invalid="false"></span>
+    </div>
+<div class="form-group">
+      <label>Subject</label><br>
+      <span class="wpcf7-form-control-wrap text-130"><input type="text" name="text-130" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="subject" aria-required="true" aria-invalid="false"></span>
+    </div>
+<div class="form-group">
+      <label>Message</label><br>
+      <span class="wpcf7-form-control-wrap textarea-962"><textarea name="textarea-962" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea form-control" id="message" aria-invalid="false"></textarea></span>
+    </div>
+<p><input type="submit" value="Send Message" class="wpcf7-form-control wpcf7-submit btn btn-primary"><img class="ajax-loader" src="./Iamx _files/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			            <div class="row center-xs">
+              <div class="col-sm-6">
+                <i class="fa fa-map-marker"></i>
+                <address>
+                  <strong>Address/Street</strong>
+                  239/2 Awesome Street,<br>
+                  Boston, USA<br>
+                </address>
+              </div>
+
+              <div class="col-sm-6">
+                <i class="fa fa-mobile"></i>
+                <div class="contact-number">
+                  <strong>Phone Number</strong>
+                  (001) 0123 111222<br>
+                  (001) 0123 333444
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+    
+    <div class="location-map ">
+        <div id="ttmap" data-map-latitude="23.810332" data-map-longitude="90.412518" data-map-marker="" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -27, -131);"><div style="width: 256px; height: 256px; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -512px; top: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -512px; top: -256px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -256px; top: -256px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 256px; top: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 256px; top: 256px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 0px; top: 256px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -256px; top: 256px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -27, -131);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;"></div></div></div><div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -119px; top: -189px; z-index: -146;"><img alt="" src="./Iamx _files/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -27, -131);"><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(1)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(2)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(3)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(4)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(5)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(6)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(7)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(8)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(9)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(10)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;"><img draggable="false" alt="" src="./Iamx _files/vt(11)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0; transition-duration: 0.8s;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"><div style="z-index: 1; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></div><div style="z-index: 4; position: absolute; left: 50%; top: 50%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div class="gmnoprint" title="" style="width: 43px; height: 59px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; left: -127px; top: -197px; z-index: -146;"><img alt="" src="./Iamx _files/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 43px; height: 59px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe frameborder="0" src="./Iamx _files/saved_resource.html" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=23.764412,90.448655&amp;z=12&amp;t=m&amp;hl=vi-VN&amp;gl=US&amp;mapclient=apiv3" title="Nhấp để xem khu vực này trên Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="./Iamx _files/google_white5.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 123px; top: 85px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Dữ liệu Bản đồ</div><div style="font-size: 13px;">Dữ liệu bản đồ ©2018 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000;"><img alt="" src="./Iamx _files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><img alt="" src="./Iamx _files/transparent.png" draggable="false" style="width: 37px; height: 37px; user-select: none; border: 0px; padding: 0px; margin: 0px; position: absolute; right: 0px; top: 0px; z-index: 10001; cursor: pointer;"></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 102px; bottom: 0px; width: 143px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; display: none;">Dữ liệu Bản đồ</a><span>Dữ liệu bản đồ ©2018 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Dữ liệu bản đồ ©2018 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/vi-VN_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Điều khoản sử dụng</a></div></div><button draggable="false" title="Chuyển đổi chế độ xem toàn màn hình" aria-label="Chuyển đổi chế độ xem toàn màn hình" type="button" style="background: none; border: 0px; margin: 10px 14px; padding: 0px; position: absolute; cursor: pointer; user-select: none; width: 25px; height: 25px; overflow: hidden; top: 0px; right: 0px;"><img alt="" src="./Iamx _files/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></button><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="93" style="margin: 10px; user-select: none; position: absolute; bottom: 107px; right: 28px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 38px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;"><button draggable="false" title="Phóng to" aria-label="Phóng to" type="button" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 28px; height: 27px; top: 0px; left: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img alt="" src="./Iamx _files/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></button><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div><button draggable="false" title="Thu nhỏ" aria-label="Thu nhỏ" type="button" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 28px; height: 27px; top: 0px; left: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img alt="" src="./Iamx _files/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: -15px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></button></div></div><div class="gm-svpc" controlwidth="28" controlheight="28" style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; position: absolute; left: 0px; top: 0px;"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="Kiểm soát người hình mắc áo trong chế độ xem phố" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img alt="" src="./Iamx _files/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Người hình mắc áo ở đầu Bản đồ" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img alt="" src="./Iamx _files/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Kiểm soát người hình mắc áo trong chế độ xem phố" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img alt="" src="./Iamx _files/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; user-select: none; position: absolute; display: none; bottom: 26px; left: 0px;"><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Xoay bản đồ 90 độ" style="width: 28px; height: 28px; overflow: hidden; position: absolute; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; display: none;"><img alt="" src="./Iamx _files/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; top: 0px; cursor: pointer;"><img alt="" src="./Iamx _files/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div></div></div>
+
+    </div> <!-- .tt-map-wrapper -->
+
+</div></div></div></div></div></div></div></div></div></section>
+
+		
+
+			<!-- Footer Section -->
+		    <footer class="footer-wrapper">
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-md-12">
+					<div class="copyright text-center">
+			        
+					            
+						            © TrendyTheme 2015. All rights reserved.					            
+
+			        					</div>
+		          </div>
+		        </div>
+		      </div>
+		    </footer><!-- End Footer Section -->        
+
+<link rel="stylesheet" id="vc_google_fonts_roboto100100italic300300italicregularitalic500500italic700700italic900900italic-css" href="./Iamx _files/css(2)" type="text/css" media="all">
+<link rel="stylesheet" id="vc_google_fonts_abril_fatfaceregular-css" href="./Iamx _files/css(3)" type="text/css" media="all">
+<script type="text/javascript" src="./Iamx _files/jquery.form.min.js.tải xuống"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/104.131.177.38\/demo\/wp\/iamx\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Iamx _files/scripts.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/bootstrap.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/owl.carousel.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/js"></script>
+<script type="text/javascript" src="./Iamx _files/jquery.countTo.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/coundown-timer.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/jquery.shuffle.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/smoothscroll.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/jquery.inview.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/jquery.easing.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/jquery.sticky.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/magnific-popup.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/jquery.stellar.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/jquery.placeholder.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/retina.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/scripts.js(1).tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/wp-embed.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/js_composer_front.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/waypoints.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/ProgressCircle.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/jquery.vc_chart.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Iamx _files/skrollr.min.js.tải xuống"></script>
+
+<div id="toTop" style="display: block;"><i class="fa fa-angle-up"></i></div></body><div></div></html>

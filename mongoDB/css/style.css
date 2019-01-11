@@ -1,0 +1,115 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-image:url(image/br.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	font-family:"Times New Roman", Times, serif;
+	background-color:#F7F7F7;
+}
+#menu{
+	width:960px;
+	margin:0 auto;
+	background-color:#FFF;
+}
+header{
+	position:relative;
+}
+.menu{
+	position:absolute;
+	top:20px;
+	right:15px;
+}
+.menu a{
+	text-decoration: none;
+	color: #555555;
+}
+
+div.logo{
+	display: block;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+#nav ul{
+	list-style-type:none;
+	background-color:#006266;
+	}
+#nav ul li {
+	color:#d1d8e0;
+	display:inline-table;
+	width:200px;
+	height:50px;
+	line-height:50px;
+	position:relative;
+}
+#nav ul li a
+{ 
+	text-align:center;
+	color:#FFF;
+	text-decoration:none;
+	display:block;
+	margin:0px;
+	font-size:20px;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+	width:200px;
+	height:50px;
+	}
+#nav ul li a:hover{
+	background-color:#077;
+	color:#FFF;
+	width:200px;
+	height:50px;
+}
+#nav ul li > .sub-nav{
+	display:none;
+	position:absolute;
+}
+#nav ul li:hover .sub-nav{
+	display:block;
+}
+#content 
+{
+	
+	margin:20px;
+	padding:20px;
+	}
+.CVcapnhat{
+	height:375px;
+	border: 1px solid #F93;
+}
+.CVcapnhat table tr td a {
+	text-decoration:none;
+	color:#333;
+	}
+.CV{
+	background:#F93;
+	width: 220px;
+	height: 40px;
+	margin:0;
+	border-radius: 20px 0;
+	
+}
+.CV p{
+	color: aliceblue;
+	font-weight: bold;
+	padding-top:5px;
+	padding-left: 20px;
+	font-size:20px;
+}
+footer
+{
+	background-color:#006266;
+	height:80px;}
+footer > p 
+{
+	text-align:center;
+	padding:30px;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	color:white;
+	font-weight:bold;
+	
+	}
